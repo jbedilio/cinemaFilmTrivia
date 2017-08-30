@@ -6,6 +6,10 @@ body {
     margin: auto;
 }
 
-.gameTitle {
-    font-size: 4em;
+#title {
+    font-size: 2.5em;
+}
+
+#questions {
+    font-size: 2em;
 }
