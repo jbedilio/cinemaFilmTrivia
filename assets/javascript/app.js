@@ -10,10 +10,10 @@ $(document).ready(function () {
                 $('#title, #clock, #questions, #submit-btn').show();
                 $('#startUp').hide();
         });
-        /*setTimeout(function(){
+        setTimeout(function(){
                 $('#title, #clock, #questions, #submit-btn').hide();
                 $('#right, #wrong').show();
-        }, 1000 * 4);*/
+        }, 1000 * 30);
         
         var $right = 0;
         var $wrong = 0;
