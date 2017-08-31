@@ -21,8 +21,8 @@ body {
     display: inline;
 }
 
-/*#right, #wrong, #no-answer {
+#right, #wrong {
     display: none;
 
-}*/
+}
 

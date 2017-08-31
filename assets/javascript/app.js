@@ -1,28 +1,19 @@
-//var clock = setTimeout (timeUp, 1000 * 240);
-//var clock = setTimeout(timeUp, 1000 * 5);
-
-
 $(document).ready(function () {
 
-//$(document).ready(function () {
-        $("#hide").on('load', function () {
-                $('#title', '#clock', '#questions', '#submit-btn', '#right', '#wrong').hide();
-            });
-        /*$("#show").on('click', function () {
-                $('#title', '#clock', '#questions', '#submit-btn', '#right', '#wrong').show();
-            });
-        });*/
 
-function startScreen() {
-                        $('#title', '#clock', '#questions', '#submit-btn', '#right', '#wrong').hide();
-                        };
+        $('#title, #clock, #questions, #submit-btn, #right, #wrong').hide();
 
-startScreen();
+        var $start = $('<button type="button" class="start" value="start">Start</button>');
 
-var $start = $('<button type="button" class="start" value="start">Start</button>');
-
-$('#startUp').append($start);
-
+        $('#startUp').append($start);
+        $($start).on('click', function() {
+                $('#title, #clock, #questions, #submit-btn, #right, #wrong').show();
+                $('#startUp').hide();
+        });
+        setTimeout(function(){
+                $('#title, #clock, #questions, #submit-btn, #right, #wrong').hide();
+        }, 1000 * 60);
+        
         var $right = 0;
         var $wrong = 0;
 
@@ -44,41 +35,32 @@ $('#startUp').append($start);
 
         var triviaQA = [{
                         question: "Who starred in both The Matrix and The Lord of the Rings trilogies?",
-                        answer: ["Tom Cruise", "Liv Tyler", "Sean Bean", "Hugo Weaving", "Keanu Reeves"],
-                        correct: "Hugo Weaving",
+                        answer:   ["Tom Cruise", "Liv Tyler", "Sean Bean", "Hugo Weaving", "Keanu Reeves"],
+                        correct:  "Hugo Weaving",
                 },
                 {
                         question: "What film's cast boasts 2 former state governors?",
-                        answer: ["Armageddon ", "Enemy of the State ", "Terminator ", "Predator ",
-                                 "Deep Impact"],
-                        correct: "Predator",
+                        answer:   ["Armageddon ", "Enemy of the State ", "Terminator ", "Predator ",
+                                  "Deep Impact"],
+                        correct:  "Predator",
                 },
                 {
                         question: "What film sat at #1 for a record breaking 15 weeks in 1997-1998?",
-                        answer: ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco",
-                                 "The Rainmaker"],
-                        correct: "Titanic",
+                        answer:   ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco",
+                                  "The Rainmaker"],
+                        correct:  "Titanic",
                 }
         ];
-
-        $('#questions').html(triviaQA[0].question);
         
+        //for(var i = 0; i < triviaQA.length; i++) {
+        $('#questions').html(triviaQA[0].question);
         var $form = $("<form>");
         $("#questions").append($form);
 
-        for(let i = 0; i < triviaQA[0].answer.length; i++){
-
-        var $radioBtn = $("<input type='radio' name='q1' value='" + triviaQA[0].answer[i] + "'>" + triviaQA[0].answer[i]+ "</input>");
-
-
+        for(var j = 0; j < triviaQA[0].answer.length; j++){
+        var $radioBtn = $("<input type='radio' name='q1' value='" + triviaQA[0].answer[j] + "'>" + triviaQA[0].answer[j]+ "</input>");
         $($radioBtn).appendTo($form);
-                /*if ($radioBtn.attr('value="Hugo Weaving"')) {
-                        $right++;
-                        $('#right').append($right);
-                }else {
-                        $wrong++;
-                        $('#wrong').append($right);
-                };*/
+
         };
 
         var $submit = ('#submit-btn');
@@ -100,9 +82,7 @@ $('#startUp').append($start);
                 };
         };
         };
-});
-
-
+        });
 /*function timeUp(){
         function grade()
 };*/
