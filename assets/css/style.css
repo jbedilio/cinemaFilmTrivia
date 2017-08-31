@@ -21,8 +21,7 @@ body {
     display: inline;
 }
 
-#right, #wrong {
-    display: none;
-
+form {
+    display: inline;
 }
 
