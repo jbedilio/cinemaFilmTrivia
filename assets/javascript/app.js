@@ -1,7 +1,27 @@
 //var clock = setTimeout (timeUp, 1000 * 240);
-// var clock = setTimeout (timeUp, 1000 * 5);
-//var questions;
+//var clock = setTimeout(timeUp, 1000 * 5);
+
+
 $(document).ready(function () {
+
+//$(document).ready(function () {
+        $("#hide").on('load', function () {
+                $('#title', '#clock', '#questions', '#submit-btn', '#right', '#wrong').hide();
+            });
+        /*$("#show").on('click', function () {
+                $('#title', '#clock', '#questions', '#submit-btn', '#right', '#wrong').show();
+            });
+        });*/
+
+function startScreen() {
+                        $('#title', '#clock', '#questions', '#submit-btn', '#right', '#wrong').hide();
+                        };
+
+startScreen();
+
+var $start = $('<button type="button" class="start" value="start">Start</button>');
+
+$('#startUp').append($start);
 
         var $right = 0;
         var $wrong = 0;
@@ -63,11 +83,11 @@ $(document).ready(function () {
 
         var $submit = ('#submit-btn');
         
-        var $button = $('<input type="button" value="grade">');
-        $button.html('Submit');
-        $($submit).append($button);
+        var $button2 = $('<input name="submit" type="button" value="submit">');
+        $button2.html('Submit');
+        $($submit).append($button2);
 
-        $($submit).on('click', function(grade) {
+        $($submit).on('click', function grade() {
         var a1 = document.getElementsByName('q1')
           for (var i = 0; i < a1.length; i++) {
         if (a1[i].checked) {
@@ -82,6 +102,10 @@ $(document).ready(function () {
         };
 });
 
+
+/*function timeUp(){
+        function grade()
+};*/
 
         // var $QADiv = $('#questions')
         // for (var i = 0; i < $triviaQA.length; i++) {
