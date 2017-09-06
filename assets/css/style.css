@@ -1,7 +1,14 @@
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     height: 750px;
-    background-color: greenyellow;
+    background: url('../images/movie-theater.jpg') no-repeat center;
+    background-size: cover;
     box-sizing: border-box;
     margin: auto;
 }
@@ -10,15 +17,26 @@ body {
     height: 200px;
     width: 25%;
     font-size: 2em;
+    margin-top: 7em;
 }
 
 #title {
+    color: #fff;
     font-size: 2.5em;
+    text-shadow: 3px -2px black;
 }
 
 #questions {
+    color: #fff;
     font-size: 1.5em;
+    text-shadow: 2px -1px black;
     display: inline;
+}
+
+#right, #wrong {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 12em;
 }
 
 form {
