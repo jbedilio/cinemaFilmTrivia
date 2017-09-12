@@ -28,7 +28,8 @@ $(document).ready(function () {
                 },
                 {
                         question: "What film sat at #1 for a record breaking 15 weeks in 1997-1998?",
-                        answer:   ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco ", "The Rainmaker "],
+                        answer:   ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco ", 
+                                   "The Rainmaker"],
                 }
         ];
 
