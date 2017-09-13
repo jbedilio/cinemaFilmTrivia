@@ -31,10 +31,13 @@ $(document).ready(function () {
                         answer:   ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco ", 
                                    "The Rainmaker"],
                 },
-                {       question: "Who authored the original Shawshank Redemption Novella?",
-                        answer:   ["J.R.R. Tolkien", "J.K. Rowling", "Stephen King", "M. Knight Shyamalan", "Danielle Steel"],
+                {       
+                        question: "Who authored the original Shawshank Redemption Novella?",
+                        answer:   ["J.R.R. Tolkien ", "J.K. Rowling ", "Stephen King ", "M. Knight Shyamalan ", "Danielle Steel "],
                 },
-                {       quesiton: "How many times does South Park"
+                {       
+                        quesiton: "How many times does the film South Park: Bigger Longer and Uncut use the f-bomb?",
+                        answer:   ["19 ", "55 ", "99 ", "149 ", "199 "],
                 }
         ];
 
