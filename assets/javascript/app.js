@@ -13,7 +13,7 @@ $(document).ready(function () {
         setTimeout(function(){
                 $('#title, #clock, #questions, #submit-btn').hide();
                 $('#right, #wrong').show();
-        }, 1000 * 30);
+        }, 1000 * 90);
         
         var $right = 0;
         var $wrong = 0;
@@ -36,7 +36,7 @@ $(document).ready(function () {
                         answer:   ["J.R.R. Tolkien ", "J.K. Rowling ", "Stephen King ", "M. Knight Shyamalan ", "Danielle Steel "],
                 },
                 {       
-                        quesiton: "How many times does the film South Park: Bigger Longer and Uncut use the f-bomb?",
+                        question: "How many times does the film South Park: Bigger Longer and Uncut use the f-bomb?",
                         answer:   ["19 ", "55 ", "99 ", "149 ", "199 "],
                 }
         ];
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
         };
         
-        my working loop that loops each questions with the possible answers with radio buttons -- it works but my grader at end of code doesn't work*/
+        my working loop that loops each questions with the possible answers with radio buttons*/
 
         for(var i = 0; i < triviaQA.length; i++) {
                 var $form = $("<form>");
@@ -140,12 +140,33 @@ $(document).ready(function () {
                                         $('#wrong').html('Incorrect: ' + $wrong);
                                         };
                                 };
-                        };
+                };
+                var a3 = document.getElementsByName('q3');
+                for (var m = 0; m < a3.length; m++) {
+                        if (a3[m].checked) {
+                                if (a3[m].value == "Stephen King ") {
+                                        $right++;
+                                        $('#right').html('Correct: ' + $right);
+                                } else {
+                                        $wrong++;
+                                        $('#wrong').html('Incorrect: ' + $wrong);
+                                        };
+                                };
+                };
+                var a4 = document.getElementsByName('q4');
+                for (var n = 0; n < a4.length; n++) {
+                        if (a4[n].checked) {
+                                if (a4[n].value == "199 ") {
+                                        $right++;
+                                        $('#right').html('Correct: ' + $right);
+                                } else {
+                                        $wrong++;
+                                        $('#wrong').html('Incorrect: ' + $wrong);
+                                        };
+                                };
+                };
                 
                 
-                
-                });
-
-
-
         });
+
+});
