@@ -31,7 +31,9 @@ $(document).ready(function () {
                         answer:   ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco ", 
                                    "The Rainmaker"],
                 },
-                {       question: "Who authored the original Shawshank Redemption Novella?"}
+                {       question: "Who authored the original Shawshank Redemption Novella?",
+                        answer:   ["J.R.R. Tolkien", "J.K. Rowling", "Stephen King", "M. Knight Shyamalan", "Danielle Steel"],
+                },
         ];
 
         /*Minimum Viable Product
