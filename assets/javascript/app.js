@@ -13,7 +13,7 @@ $(document).ready(function () {
         setTimeout(function(){
                 $('#title, #clock, #questions, #submit-btn').hide();
                 $('#right, #wrong').show();
-        }, 1000 * 90);
+        }, 1000 * 120);
         
         var $right = 0;
         var $wrong = 0;
@@ -33,11 +33,15 @@ $(document).ready(function () {
                 },
                 {       
                         question: "Who authored the original Shawshank Redemption Novella?",
-                        answer:   ["J.R.R. Tolkien ", "J.K. Rowling ", "Stephen King ", "M. Knight Shyamalan ", "Danielle Steel "],
+                        answer:   ["J.R.R. Tolkien ", "J.K. Rowling ", "Stephen King ", "M. Knight Shyamalan ", "Danielle               Steel "],
                 },
                 {       
-                        question: "How many times does the film South Park: Bigger Longer and Uncut use the f-bomb?",
+                        question: "How many times does the film South Park: Bigger Longer and Uncut drop the f-bomb?",
                         answer:   ["19 ", "55 ", "99 ", "149 ", "199 "],
+                },
+                {
+                        question: "Which film was Tim Burton's directorial debut?",
+                        answer:   ["Pee-Wee's Bid Adventure ", "Edward Scissorhands ", "Beetlejuice ", "Batman ", "Ed Wood "],
                 }
         ];
 
