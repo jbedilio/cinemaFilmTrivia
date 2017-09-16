@@ -43,10 +43,10 @@ $(document).ready(function () {
                 },
                 {
                         question: "Which film was Tim Burton's feature length directorial debut?",
-                        answer:   ["Pee-Wee's Bid Adventure ", "Edward Scissorhands ", "Beetlejuice ", "Batman ", "Ed Wood "],
+                        answer:   ["Pee-Wee's Big Adventure ", "Edward Scissorhands ", "Beetlejuice ", "Batman ", "Ed Wood "],
                 },
                 {
-                        quesiton: "Which film was Judd Apatow's feature length directorial debut?",
+                        question: "Which film was Judd Apatow's feature length directorial debut?",
                         answer:   ["Superbad ", "The 40-Year-Old Virgin ", "Knocked Up ", "This is 40 ", "Funny People "],
                 }
         ];
@@ -176,9 +176,21 @@ $(document).ready(function () {
                                 };
                 };
                 var a5 = document.getElementsByName('q5');
-                for (var n = 0; n < a5.length; n++) {
-                        if (a5[n].checked) {
-                                if (a5[n].value == "Pee-Wee's Big Adventure ") {
+                for (var p = 0; p < a5.length; p++) {
+                        if (a5[p].checked) {
+                                if (a5[p].value == "Pee-Wee's Big Adventure ") {
+                                        $right++;
+                                        $('#right').html('Correct: ' + $right);
+                                } else {
+                                        $wrong++;
+                                        $('#wrong').html('Incorrect: ' + $wrong);
+                                };
+                        };
+                };
+                var a6 = document.getElementsByName('q6');
+                for (var q = 0; q < a6.length; q++) {
+                        if (a6[q].checked) {
+                                if (a6[q].value == "The 40-Year-Old Virgin ") {
                                         $right++;
                                         $('#right').html('Correct: ' + $right);
                                 } else {
