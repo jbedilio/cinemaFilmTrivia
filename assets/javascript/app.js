@@ -27,20 +27,24 @@ $(document).ready(function () {
                         answer:   ["Armageddon ", "Enemy of the State ", "Terminator ", "Predator ", "Deep Impact "],
                 },
                 {
+                        quesiton: "Which film was Judd Apatow's feature length directorial debut?",
+                        answer:   
+                },
+                {
                         question: "What film sat at #1 for a record breaking 15 weeks in 1997-1998?",
                         answer:   ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco ", 
                                    "The Rainmaker"],
                 },
                 {       
                         question: "Who authored the original Shawshank Redemption Novella?",
-                        answer:   ["J.R.R. Tolkien ", "J.K. Rowling ", "Stephen King ", "M. Knight Shyamalan ", "Danielle               Steel "],
+                        answer:   ["J.R.R. Tolkien ", "J.K. Rowling ", "Stephen King ", "M. Knight Shyamalan ", "Danielle                              Steel "],
                 },
                 {       
                         question: "How many times does the film South Park: Bigger Longer and Uncut drop the f-bomb?",
                         answer:   ["19 ", "55 ", "99 ", "149 ", "199 "],
                 },
                 {
-                        question: "Which film was Tim Burton's directorial debut?",
+                        question: "Which film was Tim Burton's feature length directorial debut?",
                         answer:   ["Pee-Wee's Bid Adventure ", "Edward Scissorhands ", "Beetlejuice ", "Batman ", "Ed Wood "],
                 }
         ];
