@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     font-size: 16px;
     height: 750px;
-    background: url('../images/movie-theater.jpg') no-repeat center;
+    background: url('../images/movie-theater.jpg') repeat-y center;
     background-size: cover;
     box-sizing: border-box;
     margin: auto;
