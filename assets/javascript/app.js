@@ -18,7 +18,9 @@ $(document).ready(function () {
         var $right = 0;
         var $wrong = 0;
 
-        var triviaQA = [{
+        var triviaQA = [
+                
+                {        
                         question: "Who starred in both The Matrix and The Lord of the Rings trilogies?",
                         answer:   ["Tom Cruise ", "Liv Tyler ", "Sean Bean ", "Hugo Weaving ", "Keanu Reeves "],
                 },
@@ -173,7 +175,18 @@ $(document).ready(function () {
                                         };
                                 };
                 };
-                
+                var a5 = document.getElementsByName('q5');
+                for (var n = 0; n < a5.length; n++) {
+                        if (a5[n].checked) {
+                                if (a5[n].value == "Pee-Wee's Big Adventure ") {
+                                        $right++;
+                                        $('#right').html('Correct: ' + $right);
+                                } else {
+                                        $wrong++;
+                                        $('#wrong').html('Incorrect: ' + $wrong);
+                                };
+                        };
+                };
                 
         });
 
