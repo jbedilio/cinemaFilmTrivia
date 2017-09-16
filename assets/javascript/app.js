@@ -27,10 +27,6 @@ $(document).ready(function () {
                         answer:   ["Armageddon ", "Enemy of the State ", "Terminator ", "Predator ", "Deep Impact "],
                 },
                 {
-                        quesiton: "Which film was Judd Apatow's feature length directorial debut?",
-                        answer:   
-                },
-                {
                         question: "What film sat at #1 for a record breaking 15 weeks in 1997-1998?",
                         answer:   ["Good Will Hunting ", "Titanic ", "Boogie Nights ", "Donnie Brasco ", 
                                    "The Rainmaker"],
@@ -46,6 +42,10 @@ $(document).ready(function () {
                 {
                         question: "Which film was Tim Burton's feature length directorial debut?",
                         answer:   ["Pee-Wee's Bid Adventure ", "Edward Scissorhands ", "Beetlejuice ", "Batman ", "Ed Wood "],
+                },
+                {
+                        quesiton: "Which film was Judd Apatow's feature length directorial debut?",
+                        answer:   ["Superbad ", "The 40-Year-Old Virgin ", "Knocked Up ", "This is 40 ", "Funny People "],
                 }
         ];
 
