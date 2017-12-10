@@ -62,7 +62,7 @@ $(document).ready(function () {
 
         };
         
-        my working loop that loops each questions with the possible answers with radio buttons*/
+        looping through each questions' answer choices and dynamically generating a radio button for each choice*/
 
         for(var i = 0; i < triviaQA.length; i++) {
                 var $form = $("<form>");
