@@ -51,8 +51,7 @@ $(document).ready(function () {
                 }
         ];
 
-        /*Minimum Viable Product
-        $('#questions').html(triviaQA[0].question + '<br>');
+        /*$('#questions').html(triviaQA[0].question + '<br>');
         var $form = $("<form>");
         $("#questions").append($form);
 
