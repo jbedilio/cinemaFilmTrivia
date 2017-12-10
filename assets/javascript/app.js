@@ -110,7 +110,7 @@ $(document).ready(function () {
                 };
         });*/
 
-        //My not quite working loop to grade all the questions with one submit
+        //loop to grade all the questions with one submit
         $($submit).on('click', function grade() {
                 $('#title, #clock, #questions, #submit-btn').hide()
                 $('#right, #wrong').show();
