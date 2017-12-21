@@ -86,7 +86,7 @@ $(document).ready(function () {
 
         var $submit = ('#submit-btn');
         
-        var $button2 = $('<br><br><input>') // name="submit" type="button" value="submit">');
+        var $button2 = $('<br><br><input>')
                 .attr('name', 'submit')
                 .attr('type', 'button')
                 .attr('value', 'submit');
